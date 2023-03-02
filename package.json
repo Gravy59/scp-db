@@ -8,7 +8,7 @@
     "watch:tw": "tailwindcss -i ./assets/css/main.css -o ./assets/css/style.css --watch",
     "watch:hugo": "hugo server",
     "watch": "concurrently npm:watch:*",
-    "build": "tailwindcss -i ./assets/css/main.css -o ./assets/css/style.css --minify && hugo minify"
+    "build": "tailwindcss -i ./assets/css/main.css -o ./assets/css/style.css --minify && hugo --minify"
   },
   "keywords": [],
   "author": "",
