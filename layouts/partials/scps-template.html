@@ -1,0 +1,41 @@
+<div class="not-prose">
+  <ul class="divide-y divide-neutral-200 dark:divide-neutral-700">
+    {{ range .Pages.ByLinkTitle }}
+    <li class="py-6">
+      <div
+        class="space-y-2 xl:grid xl:grid-cols-4 xl:items-baseline xl:space-y-0"
+      >
+        <dl>
+          <dd
+            class="text-base font-medium leading-6 text-neutral-500 dark:text-neutral-400"
+          >
+            {{ .Params.scp.alias }}
+            <span class="before:content-['·']"> {{ .Params.scp.threat }} </span>
+          </dd>
+        </dl>
+        <div class="space-y-5 xl:col-span-3">
+          <h2
+            class="text-2xl font-bold tracking-tight leading-8 text-payne-700 dark:text-payne-50"
+          >
+            {{ .Title }}
+          </h2>
+
+          <div class="max-w-none text-neutral-500 prose dark:text-neutral-400">
+            {{ .Description }}
+          </div>
+
+          <div class="text-base leading-6 text-mango">
+            <a
+              class="after:content-['→']"
+              href="{{ .Permalink }}"
+              aria-label="Access {{ .Title }}"
+            >
+              Access
+            </a>
+          </div>
+        </div>
+      </div>
+    </li>
+    {{ end }}
+  </ul>
+</div>

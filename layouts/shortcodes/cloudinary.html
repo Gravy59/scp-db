@@ -1,0 +1,20 @@
+{{ $publicId := .Get "publicId" }}
+{{ $alt := .Get "alt" }}
+{{ $align := .Get "align" }}
+{{ $width := .Get "width" }}
+{{ $height := .Get "height" }}
+
+{{ if eq $align "right"}}
+<figure class="m-1 not-prose mx-auto border border-payne-400 float-right clear-right max-w-sm ml-3">
+{{ end }}
+{{ if eq $align "left"}}
+<figure class="m-1 not-prose mx-auto border border-payne-400 float-left max-w-sm mr-3 clear-left">
+{{ end }}
+{{ if eq $align "none"}}
+<figure class="m-1 not-prose mx-auto border border-payne-400 max-w-max">
+{{ end }}
+    <img alt="{{ $alt }}" src="{{ $.Site.Params.cloudinary_base_url }}/image/upload/q_auto,f_auto/{{ $publicId }}" width="{{ $width }}" height="{{ $height }}" />
+    <figcaption class="font-medium text-center bg-payne-200 dark:bg-payne-600">
+        {{ $alt }}
+    </figcaption>
+</figure>

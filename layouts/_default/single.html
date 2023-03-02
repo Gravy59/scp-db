@@ -1,0 +1,35 @@
+{{ define "main" }}
+<div class="px-4 mx-auto max-w-3xl sm:px-6 xl:px-0">
+  <article
+    class="pb-8 divide-y divide-neutral-200 dark:divide-neutral-700 xl:divide-y-0"
+  >
+    <header
+      class="py-10 space-y-1 text-center border-neutral-200 border-y dark:border-neutral-700"
+    >
+      <h1
+        class="text-3xl font-extrabold tracking-tight leading-9 text-neutral-900 dark:text-neutral-100 sm:text-4xl sm:leading-10 md:text-5xl md:leading-14"
+      >
+        {{ .Title }}
+      </h1>
+      <h2 class="pt-4 text-lg text-payne-400">
+        {{ if .Params.orientation }} Orientation, part {{
+        .Params.orientation.part }} {{ end }} {{ if .Params.scp }} {{
+        .Params.scp.alias }}
+        <span class="before:content-['·']"> {{ .Params.scp.threat }} </span>
+        {{ end }}
+      </h2>
+    </header>
+    <div
+      class="pb-8 divide-y divide-neutral-200 dark:divide-neutral-700 xl:divide-y-0"
+    >
+      <div
+        class="divide-y divide-neutral-200 dark:divide-neutral-700 xl:col-span-3 xl:row-span-2 xl:pb-0"
+      >
+        <div class="pt-10 pb-8 max-w-none prose dark:prose-invert">
+          {{ .Content }}
+        </div>
+      </div>
+    </div>
+  </article>
+</div>
+{{ end }}

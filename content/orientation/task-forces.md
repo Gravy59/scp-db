@@ -1,0 +1,98 @@
+---
+title: Task Forces
+description: An overview of the SCP Foundation's MTF Teams
+orientation:
+  part: 6
+---
+
+Mobile Task Forces (MTFs) are elite units comprised of personnel drawn from
+across the Foundation and are mobilized to deal with specific threats or
+situations that sometimes exceed the operational capacity or expertise of
+regular field personnel and — as their name suggests — may be relocated between
+facilities or locations as they are needed. Mobile Task Force personnel
+represent the "best of the best" of the Foundation.
+
+Mobile Task Forces vary greatly in size, composition, and purpose. A
+battalion-strength combat-oriented task force trained to deal with highly
+aggressive anomalous entities may consist of hundreds of troops plus support
+personnel, vehicles, and equipment and can be deployed in whole or in part to
+deal with threats across the globe. However, a Mobile Task Force can also be a
+small, specialized intelligence-gathering or investigative task force that may
+have fewer than a dozen personnel if that is deemed sufficient to accomplish
+their goals.
+
+While in the field, task force members often pose as emergency responders, local
+or federal law enforcement, or military personnel appropriate to the region in
+which they are operating. Mobile Task Force Commanders can also request the
+assistance of local field units or personnel stationed at nearby Foundation
+facilities in order to accomplish their missions.
+
+## Organization
+
+Each unit is fundamentally structured in a way that best suits their intended
+purpose. While combat-oriented task forces may closely follow military hierarchy
+and organization, smaller units may have an informal or otherwise esoteric chain
+of command. As such, the responsibilities of the Mobile Task Force Commander
+(MTFC) for each particular task force can vary greatly; the commander for a
+large task force might focus on maintaining multiple teams and deploying them as
+necessary to each assigned operation, whereas the commander of a small team
+might deploy with their team and direct the operation from on location.
+
+Similarly, the cohesion of each unit will vary as well. Some Mobile Task Forces
+consist of personnel who have trained and worked for many years or even decades
+together, whereas the personnel of a Mobile Task Force formed on a moment's
+notice to deal with a specific incident may know little more than each others'
+names and fields of expertise.
+
+## Creation
+
+Mobile Task Forces are typically commissioned as deemed necessary by the
+Foundation's Director of Task Forces, often with the direct approval of one or
+more O5 Council members. A significant number of Mobile Task Forces are created
+to deal with specific anomalies exhibiting traits that standard containment or
+response teams are unable to effectively counteract, though many were also
+created to pre-empt an emerging or theoretical threat.
+
+## Deactivation
+
+Mobile Task Forces created for the purpose of containing a particular anomaly
+are typically deactivated at the end of the recovery operation or when ongoing
+containment is deemed no longer necessary. Occasionally, such task forces remain
+operational if the expertise and experiences learned are considered useful for
+future incidents, but otherwise the task force will likely be disbanded and its
+personnel returned to their prior posts. Very rarely, a Mobile Task Force will
+also be disbanded if it suffers sufficient casualties to render it incapable of
+operation. In these cases, if the prior capability of that particular task force
+is deemed necessary, a new task force may be commissioned to replace it.
+
+## Task Force List
+
+---
+
+### MTF Alpha-1 ("Red Right Hand")
+
+**Task Force Mission:** Mobile Task Force Alpha-1 is a task force that reports directly
+to the O5 Council and is used in situations that require the strictest operational
+security. The task force consists of the Foundation's best and most loyal operatives.
+Further information regarding MTF Alpha-1 is classified Level 5.
+
+---
+
+### MTF Echo-11 ("Nine-Tailed Fox")
+
+**Task Force Mission:** Mobile Task Force Echo-11 handles internal security
+for the SCP Foundation, under oversight by MTF Alpha-1. They are a special ops
+force deployed to Foundation Sites when standard protocols fail and multiple
+breaches are imminent. As such, most of their operations are classified.
+
+---
+
+### MTF Tango-5 ("Samsara")
+
+**Task Force Mission:** Immortal cyborg clones created from the flesh of a dead
+god, Tango-5 utilizes esoteric and experimental Foundation weaponry to
+investigate and contain thaumaturgic, magical, and psionic threats.
+
+---
+
+**Further MTF Listings are classified Level █.**

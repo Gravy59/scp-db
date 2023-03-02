@@ -1,0 +1,17 @@
+baseURL = '/'
+disableKinds = ['taxonomy', 'taxonomyTerm']
+enableInlineShortcodes = true
+languageCode = 'en-us'
+title = 'SCiPNet Direct Access Terminal'
+[markup.goldmark.renderer]
+unsafe = true
+
+[params]
+cloudinary_base_url = 'https://res.cloudinary.com/scipnet'
+description = "A curation of the SCP Foundation Project's Greatest SCPs"
+
+[permalinks]
+categories = '/:section/:slug'
+
+[taxonomies]
+category = 'categories'
