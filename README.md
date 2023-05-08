@@ -1,9 +1,7 @@
-# scp-db
+# Next.js + Contentlayer
 
-The SCP Foundation's greatest SCPs, curated in a Hugo site
+A template with Next.js 13 app dir, Contentlayer, Tailwind CSS and dark mode.
 
-[![MIT License](https://img.shields.io/badge/License-CC%20BY--SA%204.0-green.svg)](https://creativecommons.org/licenses/by-sa/4.0/)
+https://next-contentlayer.vercel.app
 
-## Notes
 
-**_I make no claim to any of the text content. All rights go to the SCP Wiki._**

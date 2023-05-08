@@ -1,20 +1,5 @@
-# Created by https://www.toptal.com/developers/gitignore/api/macos,windows,node,hugo
-# Edit at https://www.toptal.com/developers/gitignore?templates=macos,windows,node,hugo
-
-### Hugo ###
-# Generated files by hugo
-/public/
-/resources/_gen/
-/assets/jsconfig.json
-hugo_stats.json
-
-# Executable may be added to repository
-hugo.exe
-hugo.darwin
-hugo.linux
-
-# Temporary lock file while building
-/.hugo_build.lock
+# Created by https://www.toptal.com/developers/gitignore/api/macos,windows,node,vercel
+# Edit at https://www.toptal.com/developers/gitignore?templates=macos,windows,node,vercel
 
 ### macOS ###
 # General
@@ -189,6 +174,9 @@ dist
 # SvelteKit build / generate output
 .svelte-kit
 
+### Vercel ###
+.vercel
+
 ### Windows ###
 # Windows thumbnail cache files
 Thumbs.db
@@ -215,4 +203,7 @@ $RECYCLE.BIN/
 # Windows shortcuts
 *.lnk
 
-# End of https://www.toptal.com/developers/gitignore/api/macos,windows,node,hugo
+# End of https://www.toptal.com/developers/gitignore/api/macos,windows,node,vercel
+
+# contentlayer
+.contentlayer
