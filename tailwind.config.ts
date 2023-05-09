@@ -33,10 +33,6 @@ export default {
               border: "0px",
               fontStyle: "inherit",
               fontWeight: "inherit",
-              "& hr": {
-                marginTop: theme("spacing[2.5]"),
-                marginBottom: 0,
-              },
             },
             th: {
               color: theme("colors.zinc[100]"),

@@ -1,6 +1,4 @@
-// "use client";
 import clsx from "clsx";
-// import { CldImage } from "next-cloudinary";
 import Image from "next/image";
 type ImageProps = {
   alt: string;
