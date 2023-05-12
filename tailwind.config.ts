@@ -10,6 +10,16 @@ export default {
   theme: {
     extend: {
       typography: (theme: (arg0: string) => any) => ({
+        invert: {
+          css: {
+            a: {
+              color: theme("colors.orange[600]"),
+              "&:hover": {
+                color: theme("colors.orange[500]"),
+              },
+            },
+          },
+        },
         DEFAULT: {
           css: {
             a: {

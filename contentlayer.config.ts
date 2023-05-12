@@ -1,6 +1,7 @@
 import {
   type ComputedFields,
   defineDocumentType,
+  defineNestedType,
   makeSource,
 } from "contentlayer/source-files";
 import remarkGfm from "remark-gfm";
@@ -34,8 +35,18 @@ export const SCP = defineDocumentType(() => ({
       required: true,
     },
     summary: { type: "string", required: true },
+    author: { type: "string", default: "Unknown" },
   },
   computedFields,
+}));
+
+const Attribution = defineNestedType(() => ({
+  name: "Attribution",
+  fields: {
+    author: { type: "string", default: "Unknown" },
+    adapted: { type: "boolean", default: false },
+    ogTitle: { type: "string", required: true },
+  },
 }));
 
 export const OrientationPage = defineDocumentType(() => ({
@@ -49,6 +60,11 @@ export const OrientationPage = defineDocumentType(() => ({
     },
     title: {
       type: "string",
+      required: true,
+    },
+    attribution: {
+      type: "nested",
+      of: Attribution,
       required: true,
     },
   },

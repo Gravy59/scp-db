@@ -64,6 +64,14 @@ export default async function PostPage({ params }: SCPProps) {
 
       <hr className="my-4" />
       <Mdx code={scp.body.code} />
+      <hr className="my-4" />
+      <details>
+        <summary>Attribution</summary>
+        <a href={`https://scp-wiki.wikidot.com/scp-${scp.id}`}>{`"SCP-${scp.id}"`}</a>{" "}
+        by {scp.author}, from the{" "}
+        <a href="https://scp-wiki.wikidot.com">SCP Wiki</a>. Licensed under{" "}
+        <a href="https://creativecommons.org/licenses/by-sa/3.0/">CC-BY-SA</a>.
+      </details>
     </article>
   );
 }

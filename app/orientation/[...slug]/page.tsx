@@ -61,6 +61,15 @@ export default async function PostPage({ params }: OrientationPageProps) {
 
       <hr className="my-4" />
       <Mdx code={page.body.code} />
+      <hr className="my-4" />
+      <details>
+        <summary>Attribution</summary>
+        {page.attribution?.adapted && "Adapted from "}
+        {`"${page.attribution?.ogTitle}" `}
+        by{"  "}{page.attribution.author}, from the{" "}
+        <a href="https://scp-wiki.wikidot.com">SCP Wiki</a>. Licensed under{" "}
+        <a href="https://creativecommons.org/licenses/by-sa/3.0/">CC-BY-SA</a>.
+      </details>
     </article>
   );
 }
