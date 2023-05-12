@@ -18,7 +18,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
   return (
     <html lang="en" className="antialiased h-full scroll-smooth">
       <body
-        className={`min-h-full flex transition flex-col px-4 items-center bg-white dark:bg-zinc-950 text-zinc-900 dark:text-zinc-50 ${inter.className}`}
+        className={`min-h-full flex transition flex-col px-4 items-center bg-white dark:bg-zinc-900 text-zinc-900 dark:text-zinc-50 ${inter.className}`}
       >
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
           <div className="absolute top-4 right-4">
