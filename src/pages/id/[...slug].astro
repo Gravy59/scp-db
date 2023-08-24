@@ -1,0 +1,51 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import Figure from "../../components/image.astro";
+import blockquote from "../../components/blockquote.astro";
+
+import { CollectionEntry, getCollection } from "astro:content";
+
+export async function getStaticPaths() {
+  const scps = await getCollection("scp");
+  return scps.map((scp) => ({
+    params: { slug: scp.slug },
+    props: scp,
+  }));
+}
+type Props = CollectionEntry<"scp">;
+
+const scp = Astro.props;
+const { Content } = await scp.render();
+---
+
+<BaseLayout>
+  <article class="prose dark:prose-invert prose-zinc">
+    <header class="flex flex-col border-b mb-4">
+      <h1 class="mb-2">SCP-{scp.data.id}</h1>
+      <p class="text-xl mt-0 text-zinc-700 dark:text-zinc-200">
+        <span class="scp-alias">{scp.data.alias}</span>
+        <span class="before:mx-1 before:content-['·']">
+          {scp.data.objectClass}
+        </span>
+      </p>
+    </header>
+    <Content components={{ Figure, blockquote }} />
+    <hr class="my-4" />
+    <details>
+      <summary>Attribution</summary><a
+        href={`https://scp-wiki.wikidot.com/scp-${scp.data.id}`}
+        >"SCP-{scp.data.id}"</a
+      >
+      by {scp.data.author}, from the{" "}
+      <a href="https://scp-wiki.wikidot.com">SCP Wiki</a>. Licensed under
+      <a href="https://creativecommons.org/licenses/by-sa/3.0/">CC-BY-SA</a>.
+    </details>
+  </article>
+</BaseLayout>
+
+<style>
+  .scp-alias {
+    @apply before:content-[open-quote] after:content-[close-quote];
+    quotes: "\201C""\201D""\2018""\2019";
+  }
+</style>

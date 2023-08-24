@@ -1,21 +1,18 @@
 import type { Config } from "tailwindcss";
 
 export default {
-  content: [
-    "./app/**/*.{ts,tsx}",
-    "./components/**/*.{ts,tsx}",
-    "./content/**/*.{md,mdx}",
-  ],
+  content: ["./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}"],
   darkMode: ["class"],
   theme: {
     extend: {
+      // I hate this
       typography: (theme: (arg0: string) => any) => ({
         invert: {
           css: {
             a: {
-              color: theme("colors.orange[600]"),
+              color: theme("colors.orange.600"),
               "&:hover": {
-                color: theme("colors.orange[500]"),
+                color: theme("colors.orange.500"),
               },
             },
           },
@@ -23,13 +20,13 @@ export default {
         DEFAULT: {
           css: {
             a: {
-              color: theme("colors.orange[700]"),
+              color: theme("colors.orange.700"),
               textDecoration: "none",
-              transition: theme("transitionProperty[DEFAULT]"),
-              transitionDuration: theme("transitionDuration[200]"),
+              transition: theme("transitionProperty.DEFAULT"),
+              transitionDuration: theme("transitionDuration.200"),
               "&:hover": {
                 textDecoration: "underline",
-                color: theme("colors.red[900]"),
+                color: theme("colors.red.900"),
               },
             },
             "blockquote p:first-of-type::before": false,
@@ -45,15 +42,15 @@ export default {
               fontWeight: "inherit",
             },
             th: {
-              color: theme("colors.zinc[100]"),
-              borderColor: theme("colors.zinc[400]"),
-              backgroundColor: theme("colors.red[900]"),
+              color: theme("colors.zinc.100"),
+              borderColor: theme("colors.zinc.400"),
+              backgroundColor: theme("colors.red.900"),
               padding: "0.5em 1em",
               verticalAlign: "middle",
             },
             td: {
-              borderColor: theme("colors.zinc[400]"),
-              padding: theme("spacing[2]"),
+              borderColor: theme("colors.zinc.400"),
+              padding: theme("spacing.2"),
               verticalAlign: "middle",
             },
           },
