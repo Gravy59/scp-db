@@ -7,6 +7,9 @@ import sitemap from "@astrojs/sitemap";
 export default defineConfig({
   integrations: [tailwind(), mdx(), sitemap()],
   site: "https://scp-db-zeta.vercel.app",
+  redirects: {
+    "/orientation": "/orientation/welcome",
+  },
   experimental: {
     assets: true,
   },

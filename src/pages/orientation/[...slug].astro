@@ -1,0 +1,49 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import Figure from "../../components/image.astro";
+import blockquote from "../../components/blockquote.astro";
+
+import { CollectionEntry, getCollection } from "astro:content";
+
+export async function getStaticPaths() {
+  const posts = await getCollection("orientation");
+  return posts.map((post) => ({
+    params: { slug: post.slug },
+    props: post,
+  }));
+}
+type Props = CollectionEntry<"orientation">;
+
+const post = Astro.props;
+const { Content } = await post.render();
+---
+
+<BaseLayout>
+  <article class="prose dark:prose-invert prose-zinc">
+    <header class="flex flex-col border-b mb-4">
+      <h1 class="mb-2">{post.data.title}</h1>
+      <p class="text-xl mt-0 text-zinc-700 dark:text-zinc-200">
+        Orientation, part {post.data.part}
+      </p>
+    </header>
+    <Content components={{ Figure, blockquote }} />
+    <hr class="my-4" />
+    <details>
+      <summary>Attribution</summary>{
+        post.data.attribution.adapted && "Adapted from "
+      }<a href={`https://scp-wiki.wikidot.com/${post.data.ogTitle}`}
+        >"{post.data.attribution.ogTitle}"</a
+      >
+      by {post.data.attribution.author}, from the{" "}
+      <a href="https://scp-wiki.wikidot.com">SCP Wiki</a>. Licensed under
+      <a href="https://creativecommons.org/licenses/by-sa/3.0/">CC-BY-SA</a>.
+    </details>
+  </article>
+</BaseLayout>
+
+<style>
+  .scp-alias {
+    @apply before:content-[open-quote] after:content-[close-quote];
+    quotes: "\201C""\201D""\2018""\2019";
+  }
+</style>
