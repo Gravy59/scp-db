@@ -1,11 +1,13 @@
 import type { Config } from "tailwindcss";
+import typography from "@tailwindcss/typography";
 
 export default {
   content: ["./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}"],
   theme: {
     extend: {
       // I hate this
-      typography: (theme: (arg0: string) => any) => ({
+      // @ts-expect-error: Binding element 'theme' implicitly has an 'any' type.
+      typography: ({ theme }) => ({
         invert: {
           css: {
             a: {
@@ -57,5 +59,5 @@ export default {
       }),
     },
   },
-  plugins: [require("@tailwindcss/typography")],
+  plugins: [typography],
 } satisfies Config;

@@ -20,9 +20,15 @@ const { title } = Astro.props;
         basic: {
           title: "SCiPNet Direct Access Terminal",
           type: "article",
-          image:
-            "/og.webp",
+          image: "/og.webp",
         },
+      }}
+      twitter={{
+        image: "/og.webp",
+        title: "SCiPNet Direct Access Terminal",
+        imageAlt: "SCiPNet Direct Access Terminal",
+        card: "summary_large_image",
+        description: "A curation of the SCP Foundation's greatest SCPs",
       }}
       extend={{
         // extending the default link tags
@@ -85,13 +91,9 @@ const { title } = Astro.props;
       Unless otherwise stated, the content of this page is licensed under the{
         " "
       }
-      <a
-        class="underline"
-        href="http://creativecommons.org/licenses/by-sa/3.0/"
-      >
-        Creative Commons Attribution-ShareAlike 3.0 License
-      </a>
-      .
+      <a class="underline" href="http://creativecommons.org/licenses/by-sa/3.0/"
+        >Creative Commons Attribution-ShareAlike 3.0 License</a
+      >.
       <a class="underline" href="/licensing"> More info</a>
     </footer>
   </body>

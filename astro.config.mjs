@@ -10,7 +10,9 @@ export default defineConfig({
   redirects: {
     "/orientation": "/orientation/welcome",
   },
-  experimental: {
-    assets: true,
+  image: {
+    service: {
+      entrypoint: "astro/assets/services/noop",
+    },
   },
 });
