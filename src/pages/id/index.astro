@@ -7,7 +7,7 @@ const SCPs = await getCollection("scp");
 <BaseLayout>
   <ul class="max-w-4xl divide-y">
     {
-      SCPs.sort((a, b) => Number(a.id) - Number(b.id)).map((scp) => (
+      SCPs.sort((a, b) => parseInt(a.id) - parseInt(b.id)).map((scp) => (
         <li class="flex flex-col gap-y-2 py-5">
           <dl class="text-zinc-500 font-medium dark:text-zinc-400">
             <dd>
